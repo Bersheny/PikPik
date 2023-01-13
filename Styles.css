@@ -70,26 +70,45 @@ body {
   src: url('Fonts/Poppins-Thin.ttf');
 }
 
-.headband {
-  position: fixed;
+@font-face {
+  font-family: 'Louis-George-Cafe';
+  src: url('Fonts/Louis George Cafe.ttf');
+}
+
+@font-face {
+  font-family: 'Louis-George-Cafe-Bold';
+  src: url('Fonts/Louis George Cafe Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Louis-George-Cafe-Bold-Italic';
+  src: url('Fonts/Louis George Cafe Bold Italic.ttf');
+}
+
+.header {
   top: 0px;
-  margin: auto;
-  background-color: #282a35;
+  margin: 0px;
+  color: #FFFFFF;
   width: 100%;
   height: auto;
   z-index: 1000;
-  text-underline-offset: 10px;
+  opacity: 100%;
+  letter-spacing: 3px;
+  font-family: 'Louis-George-Cafe';
 }
 
-
 .bandeau {
-  font-family: Poppins-Regular;
+  font-family: 'Louis-George-Cafe-Bold';
   text-shadow: 1px 1px 2px black;
-  height: 300px;
-  background-image: url("images/poivre-1.jpg");
+  height: 100%;
+  background-image: url("images/poivre-1-2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: auto;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-size: 0px;
   outline-style: groove;
   outline-color: #282a35;
@@ -99,15 +118,32 @@ body {
   background-size: 100%;
 }
 
-/* Github en haut à gauche, dans le menu nav
-.github {
-  position: fixed;
-  width:100px;
-  top: 5px;
-  left: 15px;
-  z-index:1001;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-family: 'SK', sans-serif;
+  font-size: 16px;
 }
-*/
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1px;
+  bottom: -2;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 hr {
   border-top: 5px dashed #f4f4f4;
@@ -196,47 +232,6 @@ hr {
   width: 50%;
 }
 
-.to-top {
-  color: black;
-  padding-top: 1.8em;
-  display: inline-block;
-  /* or block */
-  position: relative;
-  border-color: black;
-  text-decoration: none;
-  transition: transform .2s;
-  /* Animation */
-}
-
-.to-top:before {
-  color: black;
-  content: '⇡';
-  font-size: .9em;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -.7em;
-  border: solid .13em black;
-  border-radius: 10em;
-  width: 1.4em;
-  height: 1.4em;
-  line-height: 1.3em;
-  border-color: inherit;
-  transition: transform .5s ease-in;
-}
-
-.to-top:hover {
-  color: black;
-  border-color: black;
-  transform: scale(1.5);
-}
-
-/*
-.to-top:hover:before{
-transform: rotate(360deg);
-}
-*/
-
 .container {
   margin: 30px auto;
   width: 820px;
@@ -292,6 +287,125 @@ transform: rotate(360deg);
 
 .image-box:hover img {
   transform: scale(1.1)
+}
+
+#backtop {
+  position: fixed;
+  left: auto;
+  right: 20px;
+  top: auto;
+  bottom: 20px;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  background-color: #282a35;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  z-index: 999999;
+
+  opacity: 1;
+  display: none;
+}
+
+#backtop:hover {
+  background-color: rgba(49, 79, 96, 0.84);
+}
+
+#backtop.mcOut {
+  opacity: 0;
+}
+
+/* ---------------- For sticky header: class="float-panel"  ------------------*/
+.float-panel {
+  width: 100%;
+  background: transparent;
+  z-index: 300;
+  padding: 30px 0;
+  transform: translateZ(0);
+  transition: all 0.5s;
+  /* Effect for switching from .fixed to static */
+}
+
+.float-panel .content-area {
+  margin: 10px auto;
+}
+
+.float-panel a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+}
+
+.float-panel .fa-gg {
+  color: #F0595C;
+  font-size: 30px;
+  vertical-align: middle;
+  transition: all 1s;
+}
+
+/* when class="float-panel fixed" */
+.fixed {
+  background: #282a35;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 4px 0;
+  animation: slide-down 0.7s;
+  opacity: 0.9;
+}
+
+.fixed .fa-gg {
+  transform: rotate(360deg);
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- For Animation on Scroll ---------------- */
+.slideanim {
+  visibility: hidden;
+  visibility: visible\9;
+  /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+  visibility: visible;
+  animation: slide 1s;
+}
+
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
 }
 
 table {
