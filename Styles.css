@@ -118,6 +118,11 @@ body {
   background-size: 100%;
 }
 
+.bandeau-center {
+  margin-top: 15%;
+  height: 100%;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -358,7 +363,7 @@ hr {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   padding: 4px 0;
   animation: slide-down 0.7s;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .fixed .fa-gg {
@@ -372,7 +377,7 @@ hr {
   }
 
   100% {
-    opacity: 0.9;
+    opacity: 1;
     transform: translateY(0);
   }
 }
