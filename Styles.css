@@ -9,11 +9,11 @@ html {
   background-color: #e7e7e8;
   color: black;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 * {
@@ -83,6 +83,11 @@ body {
 @font-face {
   font-family: 'Louis-George-Cafe-Bold-Italic';
   src: url('Fonts/Louis George Cafe Bold Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Thin-Italic';
+  src: url('Fonts/Roboto-ThinItalic.ttf');
 }
 
 .header {
@@ -258,7 +263,7 @@ hr {
   height: 100%;
   width: 100%;
   background: rgba(0, 52, 68, 0.5);
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .text-box h1 {
@@ -290,7 +295,7 @@ hr {
 }
 
 .image-box:hover img {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 #backtop {
@@ -323,81 +328,6 @@ hr {
 
 #backtop.mcOut {
   opacity: 0;
-}
-
-/* ---------------- For sticky header: class="float-panel"  ------------------*/
-.float-panel {
-  width: 100%;
-  background: transparent;
-  z-index: 300;
-  padding: 30px 0;
-  transform: translateZ(0);
-  transition: all 0.5s;
-  /* Effect for switching from .fixed to static */
-}
-
-.float-panel .content-area {
-  margin: 10px auto;
-}
-
-.float-panel a {
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  margin: 0px 0px 5px 0px;
-}
-
-.float-panel .fa-gg {
-  color: #F0595C;
-  font-size: 30px;
-  vertical-align: middle;
-  transition: all 1s;
-}
-
-/* when class="float-panel fixed" */
-.fixed {
-  background: #282a35;
-  color: black;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  padding: 4px 0;
-  animation: slide-down 0.7s;
-  opacity: 1;
-}
-
-.fixed .fa-gg {
-  transform: rotate(360deg);
-}
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ---------------- For Animation on Scroll ---------------- */
-.slideanim {
-  visibility: hidden;
-  visibility: visible\9;
-  /*For old IE browsers IE6-8 */
-}
-
-.slideanim.slide {
-  visibility: visible;
-  animation: slide 1s;
-}
-
-.slideanim::after {
-  /* useful when its child elements are float:left; */
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @keyframes slide {
