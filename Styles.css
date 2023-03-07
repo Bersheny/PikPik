@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 html {
+  /*
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,10 +10,11 @@ html {
   background-size: 100% 100%;
   background-color: #e7e7e8;
   color: black;
+  */
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth
 }
-
+/*
 body {
   margin: 0
 }
@@ -19,6 +22,7 @@ body {
 * {
   box-sizing: border-box;
 }
+*/
 
 @font-face {
   font-family: 'Moon-Light';
@@ -84,7 +88,7 @@ body {
   font-family: 'Louis-George-Cafe-Bold-Italic';
   src: url('Fonts/Louis George Cafe Bold Italic.ttf');
 }
-
+/*
 .header {
   top: 0px;
   margin: 0px;
@@ -416,3 +420,4 @@ table {
   overflow: hidden;
   table-layout: fixed;
 }
+*/
