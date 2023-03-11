@@ -2,299 +2,337 @@
 
 <head>
 	<title>PikPik - Le Poivre Normand</title>
-	<link rel="stylesheet" type="text/css" href="Styles.css">
+
 	<meta charset="utf-8">
-	<script src="float-panel.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<link rel="stylesheet" href="starter-template.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="carousel.css">
+	<link rel="stylesheet" href="cover.css">
+	<link rel="stylesheet" href="heroes.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		.b-example-divider {
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+
+		.b-example-vr {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 100vh;
+		}
+
+		.bi {
+			vertical-align: -.125em;
+			fill: currentColor;
+		}
+
+		.nav-scroller {
+			position: relative;
+			z-index: 2;
+			height: 2.75rem;
+			overflow-y: hidden;
+		}
+
+		.nav-scroller .nav {
+			display: flex;
+			flex-wrap: nowrap;
+			padding-bottom: 1rem;
+			margin-top: -1px;
+			overflow-x: auto;
+			text-align: center;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.bg-image {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.headertop {
+			margin-bottom: 50%;
+		}
+
+		.diviseur {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.scroll {
+			color: #fff;
+			margin-top: 100px;
+		}
+
+		#toTopBtn {
+			position: fixed;
+			bottom: 26px;
+			right: 39px;
+			z-index: 98;
+			padding: 21px;
+			background-color: hsla(210, 10%, 23%, .9);
+		}
+
+		.cd-top {
+			position: fixed;
+			bottom: 20px;
+			bottom: var(--cd-back-to-top-margin);
+			right: 20px;
+			right: var(--cd-back-to-top-margin);
+			display: inline-block;
+			height: 40px;
+			height: var(--cd-back-to-top-size);
+			width: 40px;
+			width: var(--cd-back-to-top-size);
+			box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+			background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+			background-color: hsla(5, 76%, 62%, .8);
+			background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
+		}
+	</style>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
 </head>
 
-<body>
-	<div id="backtop"><a href="#accueil">&#9650;</a></div>
+<body class="h-100 text-center">
+	<a name="top"></a>
 
-	<a name="accueil">
-		<div class="bandeau">
-	</a>
+	<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+		data-abc="true"></a>
 
-	<nav>
-		<div class="float-panel" data-top="0" data-scroll="500">
-			<div class="header">
-				<table align=center>
-					<td style="padding-right: 45px">
-						<li class="hover-underline-animation"><a href="#accueil"
-								style="text-decoration:none; font-family: Louis-George-Cafe; font-size:15px">ACCUEIL</a>
-						</li>
-					</td>
-					<td style="padding-right: 45px">
-						<li class="hover-underline-animation"><a href="#histoire"
-								style="text-decoration:none; font-family: Louis-George-Cafe; font-size:15px">HISTOIRE</a>
-						</li>
-					</td>
-					<td style="padding-right: 45px">
-						<li class="hover-underline-animation"><a href="#membres"
-								style="text-decoration:none; font-family: Louis-George-Cafe; font-size:15px">MEMBRES</a>
-						</li>
-					</td>
-					<td style="padding-right: 45px">
-						<li class="hover-underline-animation"><a href="#projets"
-								style="text-decoration:none; font-family: Louis-George-Cafe; font-size:15px">PROJETS</a>
-						</li>
-					<td>
-						<li class="hover-underline-animation"><a href="#contact"
-								style="text-decoration:none; font-family: Louis-George-Cafe; font-size:15px">CONTACT</a>
-						</li>
-					</td>
-				</table>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#top">
+				<img src="images/pikpik_logo.png" alt="Bootstrap" width="30" height="24">
+			</a>
+			<a class="navbar-brand" href="#top">PIKPIK</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#presentation">Présentation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#a-propos">À propos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#membres">Notre équipe</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
-	<!--
-		<div class="header" align="center">
-			<table width=99% border=0>
-				<td align=center><br>
-					<table>
-						<td style="padding-right: 30px">
-							<li class="hover-underline-animation"><a href="#accueil"
-									style="text-decoration:none; font-family: Louis-George-Cafe; font-size:18px; color:white">ACCUEIL</a>
-							</li>
-						</td>
-						<td style="padding-right: 30px">
-							<li class="hover-underline-animation"><a href="#histoire"
-									style="text-decoration:none; font-family: Louis-George-Cafe; font-size:18px; color:white">HISTOIRE</a>
-							</li>
-						</td>
-						<td style="padding-right: 30px">
-							<li class="hover-underline-animation"><a href="#membres"
-									style="text-decoration:none; font-family: Louis-George-Cafe; font-size:18px; color:white">MEMBRES</a>
-							</li>
-						</td>
-						<td style="padding-right: 30px">
-							<li class="hover-underline-animation"><a href="#projets"
-									style="text-decoration:none; font-family: Louis-George-Cafe; font-size:18px; color:white">PROJETS</a>
-							</li>
-						<td>
-							<li class="hover-underline-animation"><a href="#contact"
-									style="text-decoration:none; font-family: Roboto; font-size:18px; color:white">CONTACT</a>
-							</li>
-						</td>
-					</table>
-				</td>
-			</table>
+
+	<div class="bg-image" style="background-image: url('images/background-sichuan-pepper-2.png')">
+		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+			<main class="px-3 mt-auto headertop">
+				<h1 style="letter-spacing: 10px">PIKPIK</h1>
+				<p class="lead" style="letter-spacing: 5px"><em>LE POIVRE NORMAND</em></p>
+				<p class="lead">
+					<a href="#presentation" class="btn btn-lg btn-light fw-bold border-white bg-white">En savoir
+						plus</a>
+				</p>
+			</main>
 		</div>
-		-->
-	<div class="bandeau-center">
-		<h1 style="font-size:45px; color:#e7e7e8">PikPik</h1>
-		<h2 style="font-size:30px; font-family:Louis-George-Cafe-Bold-Italic; color:#e7e7e8; line-height:1px">Le Poivre
-			Normand</h2>
-	</div>
 	</div>
 
-	<br><br><br>
-
-	<a name="histoire"></a>
-	<table align="center" width="95%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<img src="images/poivre-4.jpg" width=100% class="zoom">
-			</td>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Qu'est-ce que le poivre de Sichuan ?</h2>
-					<blockquote align=justify>
-						Le poivre de Sichuan est le fruit issu de l'arbuste Zanthoxylum simulans (ou Zanthoxylum
-						bungeanum), c'est-à-dire une baie et non un poivre, même s'ils sont souvent apparentés
-						<br><br>
-						Le poivre du Sichuan, appelé également poivre chinois ou baies chinoises, est l'une des plus
-						anciennes épices chinoises et un ingrédient phare de la cuisine de Sichuan. On obtient cette
-						épice en séchant et en moulant la coque entourant le fruit. Très utilisée dans la cuisine
-						asiatique, elle apporte à une multitude de plats des saveurs citronnées et boisées.<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-		</tr>
-	</table>
+	<a name="presentation"></a>
 
 	<br><br>
 
-	<table align="center" width="95%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Comment est-il fabriqué ?</h2>
-					<blockquote align=justify>
-						Cette épice est obtenue après avoir séché et moulu l'enveloppe entourant les fruits du poivrier
-						du Sichuan (Zanthoxylum piperitum), un arbuste épineux et robuste connu sous le nom de «
-						clavalier » en France. Il mesure généralement entre 3 et 4 mètres et il est couramment utilisé
-						en plante d'ornement de jardin. En Asie, il est utilisé en cuisine pour son arôme puissant,
-						légèrement anisé et citronné<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-			<td>
-				<img src="images/poivre-3.png" width=100% class="zoom">
-			</td>
-		</tr>
-	</table>
+	<div class="container my-5">
+		<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+			<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+				<h1 class="display-4 fw-bold lh-1">Mini-Entreprise PikPik</h1>
+				<p class="lead"><br><em>PikPik est une Mini-Entreprise normande vendant du poivre de Sichuan, récolté avec amour à Villedieu-les-Poêles.</em></p>
+			</div>
+			<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+				<img class="rounded-lg-3" src="images/sichuan-pepper-1.png" alt="" width="480">
+			</div>
+		</div>
+	</div>
 
-	<br><br>
 
-	<table align="center" width="95%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<img src="images/poivre-6.png" width=100% class="zoom">
-			</td>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Pourquoi le poivre de Sichuan ?</h2>
-					<blockquote align=justify>
-						Cette fameuse épice entre dans la composition du fameux mélange cinq-épices chinois. Son parfum
-						puissant relève les ragoûts de porc et les plats à base de poulet ou de canard. Le poivre du
-						Sichuan parfume aussi papillotes et fruits de mer et se marie très bien avec n'importe quel
-						dessert au chocolat.
-						<br><br>
-						Le poivrier du Sichuan, ou clavalier, est un arbuste épineux et rustique dont la résistance en
-						fait une plante relativement facile à cultiver sur presque tous les types de terrain. Capable de
-						supporter des températures allant jusqu'à -15°C en hiver, il est adapté au climat de la plupart
-						des régions d'Europe de l'ouest et s'accommode parfaitement d'une exposition prolongée en plein
-						soleil.<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-		</tr>
-	</table>
+	<div class="container marketing">
 
-	<br>
-	<hr><br><br>
+		<hr class="featurette-divider">
 
-	<table align="center" width="60%" cellspacing=0>
-		<td align="center" bgcolor=#f4f4f4>
-			<blockquote align=justify><br>
-				<h2 align=center style="font-family:Futura">À propos</h2>
-				<blockquote align=center>
-					Au début nous sommes allés chez notre éducateur, près, de Villedieu dans la Manche en Basse
-					Normandie pour récolter le poivre de Sichuan. Ensuite nous avons
-					séché le poivre dans l'atelier du lycée Notre Dame à Avranches. Par la suite nous avons trié le
-					poivre à la main dans des pots de 25grammes. Donc pour trier le poivre on porte
-					une charlotte et des gants car nous avons un protocole sanitaire.
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading fw-normal lh-1">Qu'est-ce que c'est ?</h2>
+				<p class="lead"><br><em>Le poivre de Sichuan est le fruit issu du poivrier du Sichuan, c'est donc une baie et non un poivre, même s'ils sont souvent apparentés.
+					Le poivre du Sichuan, appelé également poivre chinois ou baies chinoises, est l'une des plus
+					anciennes épices chinoises et un ingrédient phare de la cuisine de Sichuan. Très utilisée dans la cuisine
+					asiatique, elle apporte à une multitude de plats des saveurs citronnées et boisées.</em></p>
+			</div>
+			<div class="col-md-5">
+				<img src="images/glass-jar-sichuan-pepper.png" style="width: 100%;" class="img-fluid shadow rounded">
+			</div>
+		</div>
 
-					Nous avons fait des sondages pour savoir l'identité des personnes et leurs avis sur le poivre.
+		<hr class="featurette-divider">
 
-					Ensuite nous avons cherché le nom de la mini entreprise donc le nom de notre mini entreprise
-					s'appelle Pipik le poivre normand. Ultérieurement on a fait le logo de la mini entreprise. Tout
-					d’abord nous l’avons dessiné sur une feuille et puis sur l'ordinateur avec l'aide de nos mentors les
-					BTS du lycée.
+		<div class="row featurette">
+			<div class="col-md-7 order-md-2">
+				<h2 class="featurette-heading fw-normal lh-1">Comment l'obtient-t-on ?</h2>
+				<p class="lead"><br><em>Cette épice est obtenue après avoir séché et moulu l'enveloppe entourant les fruits
+					du poivrier
+					du Sichuan, un arbuste épineux et robuste connu sous le nom de «
+					clavalier » en France. Il mesure généralement entre 3 et 4 mètres et est couramment utilisé
+					en plante d'ornement de jardin. En Asie, il est utilisé en cuisine pour son arôme puissant,
+					légèrement anisé et citronné</em></p>
+			</div>
+			<div class="col-md-5 order-md-1">
+				<img src="images/sichuan-pepper-2.png" style="width: 100%;" class="img-fluid shadow rounded">
+			</div>
+		</div>
 
-					Nous avons voté pour les postes de la mini entreprise. Le résultat des élections : directeur général
-					: Antonin Houssin, directrice de markéting : Emily Havel, Directrice financière : Lehane Bellanger
-					et le directeur de production : Kylliann Ganon.
+		<hr class="featurette-divider">
 
-					Nous avons fait des avances remboursables à des personnes du DISFA pour nous aider à concrétiser
-					notre mini entreprise.
-				</blockquote>
-				<br>
-			</blockquote>
-		</td>
-	</table>
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading fw-normal lh-1">Pourquoi cette épice ?</h2>
+				<p class="lead"><br><em>Car elle entre dans la composition du fameux mélange cinq-épices
+					chinois.
+					Son parfum
+					puissant relève, par exemple, les ragoûts de porc et les plats à base de poulet ou de canard. Le poivre du
+					Sichuan parfume aussi papillotes et fruits de mer et se marie très bien avec n'importe quel
+					dessert au chocolat.
+					<br><br>
+					Le poivrier du Sichuan est un arbuste épineux et rustique dont la résistance en
+					fait une plante relativement facile à cultiver sur presque tous les types de terrain. Capable de
+					supporter des températures allant jusqu'à -15°C en hiver, il est adapté au climat de la plupart
+					des régions d'Europe de l'ouest et s'accommode parfaitement d'une exposition prolongée en plein
+					soleil.</em>
+				</p>
+			</div>
+			<div class="col-md-5">
+				<img src="images/glass-sichuan-pepper.png" style="width: 100%;" class="img-fluid shadow rounded">
+			</div>
+		</div>
+		<a name="a-propos"></a>
+	</div>
 
-	<br><br>
+	<div class="container">
+		<hr class="featurette-divider">
+	</div>
+
+	<p class="display-3">À propos</p>
+	<hr class="border-1 opacity-75 diviseur" style="width: 15%; color: #bf2650;">
+
+	<section class="py-5 text-center container">
+		<div class="row py-lg-5">
+			<div class="col-lg-6 col-md-8 mx-auto">
+				<p class="lead text-muted">
+					<strong>D'abord,</strong> <em>nous sommes allés chez notre éducateur, près de Villedieu-les-Poêles dans la
+					Manche, en Basse
+					Normandie, pour récolter le poivre de Sichuan.
+					<br><br>
+					Nous avons séché le poivre dans l'atelier du lycée Notre Dame à Avranches. Par la suite nous avons trié le
+					poivre à la main dans des pots de 25 grammes.
+					<br><br>
+					Pour trier le poivre nous portons une charlotte et des gants car nous devons suivre un protocole sanitaire.</em>
+					<br><br>
+					<strong>Ensuite,</strong> <em>nous avons cherché le nom de la mini entreprise et voter pour les postes de la mini entreprise puis dessiné notre logo sur une feuille permettant à nos mentors de le refaire sur ordinateur.</em>
+					<br><br>
+					<strong>Finalement,</strong> <em>nous avons fait des avances remboursables à des personnes du DISFA pour nous aider à concrétiser
+					notre projet.</em></p>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<hr class="featurette-divider">
+	</div>
 
 	<a name="membres"></a>
-	<table align="center" width="50%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<img src="images/antonin-houssin.jpg" width=100% class="zoom" align="right">
-			</td>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Antonin Houssin</h2>
-					<blockquote align=center>
-						Directeur général<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-		</tr>
-	</table>
-
-	<table align="center" width="50%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Emily Havel</h2>
-					<blockquote align=center>
-						Directrice du marketing<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-			<td>
-				<img src="images/emily-havel.jpg" width=100% class="zoom" align="right">
-			</td>
-		</tr>
-	</table>
-
-	<table align="center" width="50%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<img src="images/lehane-bellanger.jpg" width=100% class="zoom" align="right">
-			</td>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Lehane Bellanger</h2>
-					<blockquote align=center>
-						Directrice financière<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-		</tr>
-	</table>
-
-	<table align="center" width="50%" cellspacing=30>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td align="center" bgcolor=#f4f4f4>
-				<blockquote>
-					<br>
-					<h2 align=center style="font-family:Futura">Kylliann Ganon</h2>
-					<blockquote align=center>
-						Directeur de production<br><br>
-					</blockquote>
-				</blockquote>
-			</td>
-			<td>
-				<img src="images/kylliann-ganon.jpg" width=100% class="zoom" align="right">
-			</td>
-		</tr>
-	</table>
+	<div>
+		<p class="display-3">Notre équipe</p>
+		<hr class="border-1 opacity-75 diviseur" style="width: 15%; color: #bf2650;">
+		<!-- Three columns of text below the carousel -->
+		<div class="row mx-auto container">
+			<div class="col">
+				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<center><img class="rounded-circle align-middle" alt="avatar1" src="images/antonin-houssin.jpg"
+							width="35%" /></center>
+				</svg>
+				<h2 class="fw-normal">Antonin Houssin</h2>
+				<p>Directeur général</p>
+			</div><!-- /.col-lg-4 -->
+			<div class="col">
+				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<center><img class="rounded-circle align-middle" alt="avatar1" src="images/emily-havel.jpg"
+							width="35%" /></center>
+				</svg>
+				<h2 class="fw-normal">Emily Havel</h2>
+				<p>Directrice du marketing</p>
+			</div><!-- /.col-lg-4 -->
+			<div class="col">
+				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<center><img class="rounded-circle align-middle" alt="avatar1" src="images/lehane-bellanger.jpg"
+							width="35%" /></center>
+				</svg>
+				<h2 class="fw-normal">Lehane Bellanger</h2>
+				<p>Directrice financière</p>
+			</div><!-- /.col-lg-4 -->
+			<div class="col">
+				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+					preserveAspectRatio="xMidYMid slice" focusable="false">
+					<center><img class="rounded-circle align-middle" alt="avatar1" src="images/kylliann-ganon.jpg"
+							width="35%" /></center>
+				</svg>
+				<h2 class="fw-normal">Kylliann Ganon</h2>
+				<p>Directeur de production</p>
+			</div><!-- /.col-lg-4 -->
+		</div><!-- /.row -->
+	</div>
+	<div style="height:200px"></div>
 </body>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark text-white">
+	<p class="col-md-4 mb-0 text-white">© 2022 PikPik</p>
+	<ul class="nav col-md-4">
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Accueil</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Présentation</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">À propos</a></li>
+		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Notre équipe</a></li>
+	</ul>
+</footer>
 
 </html>
