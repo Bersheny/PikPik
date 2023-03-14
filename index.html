@@ -1,10 +1,16 @@
 <html>
 
+<!--Head-->
+
 <head>
+
+	<!--Title-->
 	<title>PikPik - Le Poivre Normand</title>
 
+	<!--Charset-->
 	<meta charset="utf-8">
 
+	<!--CSS-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="Styles.css">
@@ -15,116 +21,25 @@
 	<link rel="stylesheet" href="heroes.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
-	<style>
-		.bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			user-select: none;
-		}
-
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-				font-size: 3.5rem;
-			}
-		}
-
-		.b-example-divider {
-			height: 3rem;
-			background-color: rgba(0, 0, 0, .1);
-			border: solid rgba(0, 0, 0, .15);
-			border-width: 1px 0;
-			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-		}
-
-		.b-example-vr {
-			flex-shrink: 0;
-			width: 1.5rem;
-			height: 100vh;
-		}
-
-		.bi {
-			vertical-align: -.125em;
-			fill: currentColor;
-		}
-
-		.nav-scroller {
-			position: relative;
-			z-index: 2;
-			height: 2.75rem;
-			overflow-y: hidden;
-		}
-
-		.nav-scroller .nav {
-			display: flex;
-			flex-wrap: nowrap;
-			padding-bottom: 1rem;
-			margin-top: -1px;
-			overflow-x: auto;
-			text-align: center;
-			white-space: nowrap;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.bg-image {
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-
-		.headertop {
-			margin-bottom: 50%;
-		}
-
-		.diviseur {
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.scroll {
-			color: #fff;
-			margin-top: 100px;
-		}
-
-		#toTopBtn {
-			position: fixed;
-			bottom: 26px;
-			right: 39px;
-			z-index: 98;
-			padding: 21px;
-			background-color: hsla(210, 10%, 23%, .9);
-		}
-
-		.cd-top {
-			position: fixed;
-			bottom: 20px;
-			bottom: var(--cd-back-to-top-margin);
-			right: 20px;
-			right: var(--cd-back-to-top-margin);
-			display: inline-block;
-			height: 40px;
-			height: var(--cd-back-to-top-size);
-			width: 40px;
-			width: var(--cd-back-to-top-size);
-			box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
-			background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
-			background-color: hsla(5, 76%, 62%, .8);
-			background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
-		}
-	</style>
-
+	<!--JavaScript-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 		crossorigin="anonymous"></script>
+
 </head>
 
+<!--Body-->
+
 <body class="h-100 text-center">
+
+	<!--Top anchor-->
 	<a name="top"></a>
 
+	<!--Back to top button-->
 	<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
 		data-abc="true"></a>
 
+	<!--Navbar-->
 	<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#top">
@@ -142,16 +57,17 @@
 						<a class="nav-link" href="#presentation">Présentation</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#a-propos">À propos</a>
+						<a class="nav-link" href="#about">À propos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#membres">Notre équipe</a>
+						<a class="nav-link" href="#team">Notre équipe</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
+	<!--Cover-->
 	<div class="bg-image" style="background-image: url('images/background-sichuan-pepper-2.png')">
 		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 			<main class="px-3 mt-auto headertop">
@@ -165,15 +81,18 @@
 		</div>
 	</div>
 
+	<!--Presentation anchor-->
 	<a name="presentation"></a>
 
 	<br><br>
 
+	<!--PikPik Presentation-->
 	<div class="container my-5">
 		<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
 			<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
 				<h1 class="display-4 fw-bold lh-1">Mini-Entreprise PikPik</h1>
-				<p class="lead"><br><em>PikPik est une Mini-Entreprise normande vendant du poivre de Sichuan, récolté avec amour à Villedieu-les-Poêles.</em></p>
+				<p class="lead"><br><em>PikPik est une Mini-Entreprise normande vendant du poivre de Sichuan, récolté
+						avec amour à Villedieu-les-Poêles.</em></p>
 			</div>
 			<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
 				<img class="rounded-lg-3" src="images/sichuan-pepper-1.png" alt="" width="480">
@@ -181,35 +100,38 @@
 		</div>
 	</div>
 
-
+	<!--Pepper presentation-->
 	<div class="container marketing">
-
 		<hr class="featurette-divider">
 
+		<!--1-->
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading fw-normal lh-1">Qu'est-ce que c'est ?</h2>
-				<p class="lead"><br><em>Le poivre de Sichuan est le fruit issu du poivrier du Sichuan, c'est donc une baie et non un poivre, même s'ils sont souvent apparentés.
-					Le poivre du Sichuan, appelé également poivre chinois ou baies chinoises, est l'une des plus
-					anciennes épices chinoises et un ingrédient phare de la cuisine de Sichuan. Très utilisée dans la cuisine
-					asiatique, elle apporte à une multitude de plats des saveurs citronnées et boisées.</em></p>
+				<p class="lead"><br><em>Le poivre de Sichuan est le fruit issu du poivrier du Sichuan, c'est donc une
+						baie et non un poivre, même s'ils sont souvent apparentés.
+						Le poivre du Sichuan, appelé également poivre chinois ou baies chinoises, est l'une des plus
+						anciennes épices chinoises et un ingrédient phare de la cuisine de Sichuan. Très utilisée dans
+						la cuisine
+						asiatique, elle apporte à une multitude de plats des saveurs citronnées et boisées.</em></p>
 			</div>
 			<div class="col-md-5">
 				<img src="images/glass-jar-sichuan-pepper.png" style="width: 100%;" class="img-fluid shadow rounded">
 			</div>
 		</div>
-
 		<hr class="featurette-divider">
 
+		<!--2-->
 		<div class="row featurette">
 			<div class="col-md-7 order-md-2">
 				<h2 class="featurette-heading fw-normal lh-1">Comment l'obtient-t-on ?</h2>
-				<p class="lead"><br><em>Cette épice est obtenue après avoir séché et moulu l'enveloppe entourant les fruits
-					du poivrier
-					du Sichuan, un arbuste épineux et robuste connu sous le nom de «
-					clavalier » en France. Il mesure généralement entre 3 et 4 mètres et est couramment utilisé
-					en plante d'ornement de jardin. En Asie, il est utilisé en cuisine pour son arôme puissant,
-					légèrement anisé et citronné</em></p>
+				<p class="lead"><br><em>Cette épice est obtenue après avoir séché et moulu l'enveloppe entourant les
+						fruits
+						du poivrier
+						du Sichuan, un arbuste épineux et robuste connu sous le nom de «
+						clavalier » en France. Il mesure généralement entre 3 et 4 mètres et est couramment utilisé
+						en plante d'ornement de jardin. En Asie, il est utilisé en cuisine pour son arôme puissant,
+						légèrement anisé et citronné</em></p>
 			</div>
 			<div class="col-md-5 order-md-1">
 				<img src="images/sichuan-pepper-2.png" style="width: 100%;" class="img-fluid shadow rounded">
@@ -218,68 +140,87 @@
 
 		<hr class="featurette-divider">
 
+		<!--3-->
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading fw-normal lh-1">Pourquoi cette épice ?</h2>
 				<p class="lead"><br><em>Car elle entre dans la composition du fameux mélange cinq-épices
-					chinois.
-					Son parfum
-					puissant relève, par exemple, les ragoûts de porc et les plats à base de poulet ou de canard. Le poivre du
-					Sichuan parfume aussi papillotes et fruits de mer et se marie très bien avec n'importe quel
-					dessert au chocolat.
-					<br><br>
-					Le poivrier du Sichuan est un arbuste épineux et rustique dont la résistance en
-					fait une plante relativement facile à cultiver sur presque tous les types de terrain. Capable de
-					supporter des températures allant jusqu'à -15°C en hiver, il est adapté au climat de la plupart
-					des régions d'Europe de l'ouest et s'accommode parfaitement d'une exposition prolongée en plein
-					soleil.</em>
+						chinois.
+						Son parfum
+						puissant relève, par exemple, les ragoûts de porc et les plats à base de poulet ou de canard. Le
+						poivre du
+						Sichuan parfume aussi papillotes et fruits de mer et se marie très bien avec n'importe quel
+						dessert au chocolat.
+						<br><br>
+						Le poivrier du Sichuan est un arbuste épineux et rustique dont la résistance en
+						fait une plante relativement facile à cultiver sur presque tous les types de terrain. Capable de
+						supporter des températures allant jusqu'à -15°C en hiver, il est adapté au climat de la plupart
+						des régions d'Europe de l'ouest et s'accommode parfaitement d'une exposition prolongée en plein
+						soleil.</em>
 				</p>
 			</div>
 			<div class="col-md-5">
 				<img src="images/glass-sichuan-pepper.png" style="width: 100%;" class="img-fluid shadow rounded">
 			</div>
 		</div>
-		<a name="a-propos"></a>
 	</div>
 
+	<!--About anchor-->
+	<a name="about"></a>
+
+	<!--Divider-->
 	<div class="container">
 		<hr class="featurette-divider">
 	</div>
 
+	<!--About-->
 	<p class="display-3">À propos</p>
 	<hr class="border-1 opacity-75 diviseur" style="width: 15%; color: #bf2650;">
 
+	<!--Section-->
 	<section class="py-5 text-center container">
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
 				<p class="lead text-muted">
-					<strong>D'abord,</strong> <em>nous sommes allés chez notre éducateur, près de Villedieu-les-Poêles dans la
-					Manche, en Basse
-					Normandie, pour récolter le poivre de Sichuan.
+					<strong>D'abord,</strong> <em>nous sommes allés chez notre éducateur, près de Villedieu-les-Poêles
+						dans la
+						Manche, en Basse
+						Normandie, pour récolter le poivre de Sichuan.
+						<br><br>
+						Nous avons séché le poivre dans l'atelier du lycée Notre Dame à Avranches. Par la suite nous
+						avons trié le
+						poivre à la main dans des pots de 25 grammes.
+						<br><br>
+						Pour trier le poivre nous portons une charlotte et des gants car nous devons suivre un protocole
+						sanitaire.</em>
 					<br><br>
-					Nous avons séché le poivre dans l'atelier du lycée Notre Dame à Avranches. Par la suite nous avons trié le
-					poivre à la main dans des pots de 25 grammes.
+					<strong>Ensuite,</strong> <em>nous avons cherché le nom de la mini entreprise et voter pour les
+						postes de la mini entreprise puis dessiné notre logo sur une feuille permettant à nos mentors de
+						le refaire sur ordinateur.</em>
 					<br><br>
-					Pour trier le poivre nous portons une charlotte et des gants car nous devons suivre un protocole sanitaire.</em>
-					<br><br>
-					<strong>Ensuite,</strong> <em>nous avons cherché le nom de la mini entreprise et voter pour les postes de la mini entreprise puis dessiné notre logo sur une feuille permettant à nos mentors de le refaire sur ordinateur.</em>
-					<br><br>
-					<strong>Finalement,</strong> <em>nous avons fait des avances remboursables à des personnes du DISFA pour nous aider à concrétiser
-					notre projet.</em></p>
+					<strong>Finalement,</strong> <em>nous avons fait des avances remboursables à des personnes du DISFA
+						pour nous aider à concrétiser
+						notre projet.</em>
+				</p>
 			</div>
 		</div>
 	</section>
 
+	<!--Divider-->
 	<div class="container">
 		<hr class="featurette-divider">
 	</div>
 
-	<a name="membres"></a>
+	<!--Team anchor-->
+	<a name="team"></a>
+
+	<!--Team-->
 	<div>
 		<p class="display-3">Notre équipe</p>
 		<hr class="border-1 opacity-75 diviseur" style="width: 15%; color: #bf2650;">
-		<!-- Three columns of text below the carousel -->
 		<div class="row mx-auto container">
+
+			<!--1-->
 			<div class="col">
 				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
 					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
@@ -289,7 +230,9 @@
 				</svg>
 				<h2 class="fw-normal">Antonin Houssin</h2>
 				<p>Directeur général</p>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
+			<!--2-->
 			<div class="col">
 				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
 					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
@@ -299,7 +242,9 @@
 				</svg>
 				<h2 class="fw-normal">Emily Havel</h2>
 				<p>Directrice du marketing</p>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
+			<!--3-->
 			<div class="col">
 				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
 					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
@@ -309,7 +254,9 @@
 				</svg>
 				<h2 class="fw-normal">Lehane Bellanger</h2>
 				<p>Directrice financière</p>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
+			<!--4-->
 			<div class="col">
 				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
 					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
@@ -319,20 +266,46 @@
 				</svg>
 				<h2 class="fw-normal">Kylliann Ganon</h2>
 				<p>Directeur de production</p>
-			</div><!-- /.col-lg-4 -->
-		</div><!-- /.row -->
+			</div>
+		</div>
 	</div>
 	<div style="height:200px"></div>
+
 </body>
 
+<!--Footer-->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark text-white">
-	<p class="col-md-4 mb-0 text-white">© 2022 PikPik</p>
-	<ul class="nav col-md-4">
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Accueil</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Présentation</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">À propos</a></li>
-		<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Notre équipe</a></li>
+
+	<!--Left-->
+	<p class=" col-md-4 mb-0 text-white">© 2022 PikPik</p>
+
+	<!--
+	<ul class="nav col-md-2">
+		<li class="nav-item"><p class="nav-link px-2 text-white">© 2022 PikPik</p></li>
+		<li class="nav-item"><p class="nav-link px-2 text-white">|</p></li>
+		<li class="nav-item"><a href="#top" class="nav-link px-2 text-white">CGU</a></li>
 	</ul>
+	-->
+	
+	<!--Right-->
+	<ul class="nav col-md-4">
+		<li class="nav-item"><a href="#top" class="nav-link px-2 text-white">Accueil</a></li>
+		<li class="nav-item"><a href="#presentation" class="nav-link px-2 text-white">Présentation</a></li>
+		<li class="nav-item"><a href="#about" class="nav-link px-2 text-white">À propos</a></li>
+		<li class="nav-item"><a href="#team" class="nav-link px-2 text-white">Notre équipe</a></li>
+	</ul>
+
+	<!--
+	<ul class="nav col-md-4">
+		<li class="nav-item"><a href="#top" class="nav-link px-2 text-white">Accueil</a></li>
+		<li class="nav-item"><a href="#presentation" class="nav-link px-2 text-white">Présentation</a></li>
+		<li class="nav-item"><a href="#about" class="nav-link px-2 text-white">À propos</a></li>
+		<li class="nav-item"><a href="#team" class="nav-link px-2 text-white">Notre équipe</a></li>
+		<li class="nav-item"><p class="nav-link px-2 text-white">|</p></li>
+		<li class="nav-item"><a href="#top" class="nav-link px-2 text-white">CGU</a></li>
+	</ul>
+ 	-->
+
 </footer>
 
 </html>
