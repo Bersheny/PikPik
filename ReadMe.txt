@@ -1,0 +1,4 @@
+- Manque les photos vertical (récolte et séchage)
+- Manque le texte (séchage et bts)
+- Recette à refaire
+- Zoom sur les images de la galerie
