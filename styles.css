@@ -101,8 +101,7 @@ html {
 }
 
 .galerie {
-  width: 525px; /* You can set the dimensions to whatever you want */
+  width: 525px;
   height: 525px;
-  max-height: 525px;
   object-fit: cover;
 }
