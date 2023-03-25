@@ -99,3 +99,10 @@ html {
   background-color: hsla(5, 76%, 62%, .8);
   background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
 }
+
+.galerie {
+  width: 525px; /* You can set the dimensions to whatever you want */
+  height: 525px;
+  max-height: 525px;
+  object-fit: cover;
+}
