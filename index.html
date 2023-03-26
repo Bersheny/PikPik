@@ -37,7 +37,7 @@
 	<a name="top"></a>
 
 	<!--Back to top button-->
-	<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+	<a href="#top" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
 		data-abc="true"></a>
 
 	<!--Navbar-->
@@ -395,6 +395,36 @@
 
 	<!--Margin-->
 	<div style="height:200px"></div>
+
+	<!--Script-->
+	<script>
+		//Get the button
+		let mybutton = document.getElementById("toTopBtn");
+		mybutton.style.display = "none";
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction();
+		};
+
+		function scrollFunction() {
+			if (
+				document.body.scrollTop > 20 ||
+				document.documentElement.scrollTop > 20
+			) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		mybutton.addEventListener("click", backToTop);
+
+		function backToTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 
 </body>
 
